@@ -4,7 +4,7 @@ tommy chheng
 
 ----
 A base Sinatra application template. Just fork and build. Yay!
-Includes Haml, Rspec all ready to go.
+Includes Haml all ready to go.
 
 == Configuration
 Add gems to Gemfile
@@ -15,5 +15,4 @@ Add your controller actions in <tt>application.rb</tt>. Views for these actions 
 TODO
 
 == Getting Started
-bundle pack
-./rackup
+rackup -p 5000
