@@ -13,7 +13,7 @@ set :stage, :production
 set :user, "deploy"
 set :use_sudo, false
 set :runner, "deploy"
-set :deploy_to, "/u/apps/#{stage}/#{application}"
+set :deploy_to, "/data/apps/#{stage}/#{application}"
 set :app_server, :passenger
 set :domain, "DOMAIN_URL"
  

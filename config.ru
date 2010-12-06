@@ -1,10 +1,7 @@
 require 'application'
 
-set :environment, :production
-disable :run
-
 use Rack::ShowExceptions
-use Rack::Static, :urls => [ '/favicon.ico', '/css' ], :root => "public"
+use Rack::Static, :urls => [ '/favicon.ico', '/stylesheets' ], :root => "public"
 
 $LOAD_PATH.unshift("#{File.dirname(__FILE__)}/lib")
 Dir.glob("#{File.dirname(__FILE__)}/lib/*.rb") { |lib| require File.basename(lib, '.*') }
@@ -15,3 +12,4 @@ $stdout.reopen(log)
 $stderr.reopen(log)
 
 run Application
+

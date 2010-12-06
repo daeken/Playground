@@ -1,6 +1,6 @@
 = Sinatra Application Template
 tommy chheng
-- forked from zapnap/sinatra-template, removed datamapper.
+- forked from zapnap/sinatra-template, removed datamapper + rspec.
 
 ----
 A base Sinatra application template. Just fork and build. Yay!
@@ -15,4 +15,5 @@ Add your controller actions in <tt>application.rb</tt>. Views for these actions 
 TODO
 
 == Getting Started
-rackup -p 5000
+run using 
+shotgun config.ru -p 4567

@@ -2,7 +2,7 @@ require 'rubygems'
 require 'bundler'
 Bundler.setup
 
-require 'sinatra'
+require 'sinatra/base'
 require 'haml'
 require 'ostruct'
 SiteConfig = OpenStruct.new(
@@ -24,3 +24,4 @@ class Application < Sinatra::Base
   end
   
 end
+
