@@ -5,7 +5,7 @@ set :application, "playground"
 
 set :scm, :git
 set :git_enable_submodules, 1
-set :repository, "git@github.com:daeken/Playground.git"
+set :repository, "https://daeken@github.com/daeken/Playground.git"
 set :branch, "master"
 set :ssh_options, { :forward_agent => true }
 
